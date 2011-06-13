@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?php print $title; ?></title>
+    <link href="<?php print REF_SITE; ?>css/stint.css" rel="stylesheet" type="text/css" />
+<?php
+  if (!empty($header_styles)) {
+    while (list($key,$val) = each($header_styles)) {
+      print "    <link href=\"" . $val . "\" rel=\"stylesheet\" type=\"text/css\" />\n";
+    }
+  }
+?>
+    <script type="text/javascript" src="<?php print REF_SITE; ?>js/stint.js"></script>
+    <script type="text/javascript" src="<?php print REF_SITE; ?>js/jquery/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="<?php print REF_SITE; ?>js/jquery/jquery.json-2.2.min.js"></script>
+<?php
+  if (!empty($header_scripts)) {
+    while (list($key,$val) = each($header_scripts)) {
+      print "    <script type=\"text/javascript\" src=\"" . $val . "\"></script>\n";
+    }
+  }
+?>
+  <body>
+

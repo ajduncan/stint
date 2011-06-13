@@ -1,0 +1,28 @@
+body {
+  background-color:#5d4948; 
+  margin: 0px; 
+}
+
+#logo {
+  border: 2px solid #000;
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  background-color:#5d4948; 
+}
+
+#welcome {
+  font-family: Verdana; 
+  font-size: 1.5em; 
+  font-weight: normal; 
+  color: #000000;
+
+  border: 1px solid #000;
+  width: 450px;
+  padding: 10px;
+
+  position: absolute;
+  top: 35px;
+  left: 550px;
+  background-color: #fff; 
+}
